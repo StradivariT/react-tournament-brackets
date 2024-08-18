@@ -54,17 +54,7 @@ export default function RoundHeader({
         dominantBaseline="middle"
         textAnchor="middle"
       >
-        {!roundHeader.roundTextGenerator &&
-          columnIndex + 1 === numOfRounds &&
-          'Final'}
-        {!roundHeader.roundTextGenerator &&
-          columnIndex + 1 === numOfRounds - 1 &&
-          'Semi-final'}
-        {!roundHeader.roundTextGenerator &&
-          columnIndex + 1 < numOfRounds - 1 &&
-          `Round ${tournamentRoundText}`}
-        {roundHeader.roundTextGenerator &&
-          roundHeader.roundTextGenerator(columnIndex + 1, numOfRounds)}
+       ${tournamentRoundText}
       </Text>
     </g>
   );
