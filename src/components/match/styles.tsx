@@ -38,7 +38,7 @@ export const Score = styled.div<ScoreProps>`
   height: 100%;
   padding: 0 1rem;
   align-items: center;
-  width: 20%;
+  width: 30%;
   justify-content: center;
   background: ${({ theme, won }: any) =>
     won ? theme.score.background.wonColor : theme.score.background.lostColor};
