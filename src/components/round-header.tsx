@@ -54,7 +54,7 @@ export default function RoundHeader({
         dominantBaseline="middle"
         textAnchor="middle"
       >
-       ${tournamentRoundText}
+       {tournamentRoundText}
       </Text>
     </g>
   );
